@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    x = int(input())
+    x = int(input())                                                                                     
     y = int(input())
     z = int(input())
     n = int(input())
@@ -12,3 +12,13 @@ if __name__ == '__main__':
     ]
     
     print(result)
+    
+
+Alternate way of writing above code with loops
+
+result = []
+for i in range(x + 1):
+    for j in range(y + 1):
+        for k in range(z + 1):
+            if i + j + k != n:
+                result.append([i, j, k])
