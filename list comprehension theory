@@ -36,7 +36,7 @@ for i in range(3):
 
 pairs = [[i, j] for i in range(3) for j in range(2)]
 
-
-
-
+********************************************************************
+Syntax : [new_value for item in iterable if condition]
+********************************************************************
 
