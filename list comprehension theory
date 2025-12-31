@@ -1,0 +1,42 @@
+A list comprehension is a short and clean way to create a list using:
+a loop
+optional conditions
+
+
+syntax = new_list = [expression for item in iterable if condition]
+
+
+example,
+
+squares = []
+for i in range(5):
+    squares.append(i * i)
+
+squares = [i * i for i in range(5)]
+        Expression  loop    condition
+
+example 2 for even bnumbers evens = [i for i in range(10) if i % 2 == 0]
+# Output: [0, 2, 4, 6, 8]
+
+
+words = ["apple", "banana", "cherry"]
+upper = [w.upper() for w in words]
+# Output: ['APPLE', 'BANANA', 'CHERRY']
+
+_____________________________________________________________________________________________
+
+NESTED LIST COMPREHENSION
+_____________________________________________________________________________________________
+
+pairs = []
+for i in range(3):
+    for j in range(2):
+        pairs.append([i, j])
+
+
+pairs = [[i, j] for i in range(3) for j in range(2)]
+
+
+
+
+
