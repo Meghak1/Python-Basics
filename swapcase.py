@@ -5,6 +5,19 @@ if __name__ == '__main__':
     s = input()
     result = swap_case(s)
     print(result)
+
+
+def swap_case(s):
+    result = ""
+    for ch in s:
+        if ch.islower():
+            result += ch.upper()
+        elif ch.isupper():
+            result += ch.lower()
+        else:
+            result += ch
+    return result
+
 '''
 
 You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.
